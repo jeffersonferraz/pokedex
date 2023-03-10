@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PokeCardsComponent } from './poke-cards/poke-cards.component';
 
 import {MatCardModule} from '@angular/material/card';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokeCardsComponent
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
