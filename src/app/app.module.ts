@@ -7,16 +7,21 @@ import { AppComponent } from './app.component';
 import {MatCardModule} from '@angular/material/card';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent
+    PokemonComponent,
+    PokemonDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
