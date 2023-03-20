@@ -7,8 +7,5 @@ import { PokemonService } from './pokemon.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pokedex';
-
-  constructor(private pokemonService: PokemonService) {}
-
+  title = 'Pokedex';
 }

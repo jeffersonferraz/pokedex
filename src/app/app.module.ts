@@ -5,7 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { PokemonComponent } from './pokemon/pokemon.component';
+import { PokemonComponent } from './pokemons/pokemons.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 
 
