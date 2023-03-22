@@ -8,6 +8,11 @@
     margin-left: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
-    background-color: rgb(239, 237, 237);
+    border-radius: 15px;
+    background-color: rgb(226, 226, 226);
     text-align: center;
+}
+
+.content {
+    border-radius: 15px;
 }
