@@ -6,18 +6,20 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
+import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PokemonComponent,
+    PokemonDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
