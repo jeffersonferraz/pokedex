@@ -11,8 +11,15 @@
     border-radius: 15px;
     background-color: rgb(226, 226, 226);
     text-align: center;
+    cursor: pointer;
 }
 
 .content {
     border-radius: 15px;
+}
+
+.button {
+    margin: auto;
+    color: black;
+    background-color: rgb(226, 226, 226);
 }

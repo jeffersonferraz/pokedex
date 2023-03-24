@@ -1,0 +1,31 @@
+<h2 class="back" routerLink="/pokemon">Back to Pokedex</h2>
+
+<div *ngIf="pokemon">
+    <mat-card class="view">
+
+        <mat-card-title class="title">
+            {{pokemon.name}}
+        </mat-card-title>
+
+        <mat-card-content style="background-image: url(https://cdn.lospec.com/thumbnails/gallery/fortenzz/vastness-default.png);">
+            <img mat-card-xl-image [src]="pokemon.sprites.front_default" alt="Pokemon"> <br>
+        </mat-card-content>
+
+        <mat-card-footer>
+            <b>Attacks:</b> <br>
+            {{pokemon.moves[0].move.name}} <br>
+            {{pokemon.moves[1].move.name}} <br>
+            {{pokemon.moves[2].move.name}} <br>
+            {{pokemon.moves[3].move.name}} <br>
+            <br>
+            <b>Stats:</b> <br>
+            {{pokemon.stats[0].stat.name}}: {{pokemon.stats[0].base_stat}} <br>
+            {{pokemon.stats[1].stat.name}}: {{pokemon.stats[1].base_stat}} <br>
+            {{pokemon.stats[2].stat.name}}: {{pokemon.stats[2].base_stat}} <br>
+            {{pokemon.stats[3].stat.name}}: {{pokemon.stats[3].base_stat}} <br>
+            {{pokemon.stats[4].stat.name}}: {{pokemon.stats[4].base_stat}} <br>
+            {{pokemon.stats[5].stat.name}}: {{pokemon.stats[5].base_stat}} <br>
+        </mat-card-footer>
+
+    </mat-card>
+</div>

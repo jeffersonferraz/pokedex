@@ -1,6 +1,6 @@
 <div class="container">
-    
-    <mat-card class="card" *ngFor="let pokemon of pokemons">
+
+    <mat-card routerLink="/detail/{{pokemon.name}}" class="card" *ngFor="let pokemon of pokemons">
 
         <mat-card-title class="title">
             {{pokemon.name}}
