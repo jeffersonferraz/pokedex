@@ -9,6 +9,7 @@ import { PokemonService } from '../pokemon.service';
 export class PokemonComponent implements OnInit{
 
   pokemons: any[] = [];
+  searchText = '';
 
   //PokemonService wird Injected
   constructor (
@@ -29,7 +30,6 @@ export class PokemonComponent implements OnInit{
           });
         });
     });
-
   }
-
+  
 }

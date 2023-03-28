@@ -1,6 +1,8 @@
+<input class="search" type="text" placeholder="Search" [(ngModel)]="searchText">
+
 <div class="container">
 
-    <mat-card routerLink="/detail/{{pokemon.name}}" class="card" *ngFor="let pokemon of pokemons">
+    <mat-card routerLink="/detail/{{pokemon.name}}" class="card" *ngFor="let pokemon of pokemons | search: searchText">
 
         <mat-card-title class="title">
             {{pokemon.name}}
