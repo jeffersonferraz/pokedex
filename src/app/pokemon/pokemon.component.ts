@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon.service';
+import { PokemonInterface } from './pokemon.interface';
 
 @Component({
   selector: 'app-pokemon',
@@ -8,7 +9,7 @@ import { PokemonService } from '../pokemon.service';
 })
 export class PokemonComponent implements OnInit{
 
-  pokemons: any[] = [];
+  pokemons: Array<PokemonInterface> = [];
   searchText: string = '';
 
   //PokemonService wird Injected
