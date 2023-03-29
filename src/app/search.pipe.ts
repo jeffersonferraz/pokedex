@@ -5,15 +5,20 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    if(!value) return null;
-    if(!args) return value;
+  //Wenn die Searchbar leer ist, dann erscheinen alle Pokemon wieder
+  transform(value: any, searchText:string ) {
+    if(searchText === '') {
+      return value;
+    }
 
-    args = args.toLowerCase();
-
-    return value.filter((item: any) => {
-      return JSON.stringify(item).toLowerCase().includes(args);
-    })
+    //Wenn die Searchbar einem Pokemon entspricht wird es angezeigt
+    const pokemons = [];
+    for(const pokemon of value) {
+      if(pokemon['name'].includes(searchText)) {
+        pokemons.push(pokemon)
+      }
+    }
+    return pokemons;
   }
 
 }

@@ -9,7 +9,7 @@ import { PokemonService } from '../pokemon.service';
 export class PokemonComponent implements OnInit{
 
   pokemons: any[] = [];
-  searchText = '';
+  searchText: string = '';
 
   //PokemonService wird Injected
   constructor (
