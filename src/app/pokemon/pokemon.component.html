@@ -2,7 +2,7 @@
 
 <div class="container">
 
-    <mat-card routerLink="/detail/{{pokemon.name}}" class="card" *ngFor="let pokemon of pokemons | search: searchText">
+    <mat-card routerLink="/detail/{{pokemon.name}}" class="card" *ngFor="let pokemon of pokemons | search:searchText">
 
         <mat-card-title class="title">
             {{pokemon.name}}
